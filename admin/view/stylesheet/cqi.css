@@ -1,0 +1,56 @@
+/**
+ * @version		$Id: cqi.css 2507 2011-10-30 18:06:57Z mic $
+ * @package		Several made by OSWorX
+ * @copyright	(C) 2010 mic [ http://osworx.net ]. All Rights Reserved.
+ * @author		mic - http://osworx.net
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
+ */
+#cpanel div.cqi {
+	float			: left;
+	text-align		: center;
+	margin			: 3px 0;
+	padding			: 0 3px;
+	height			: 95px;
+}
+#cpanel div.cqi a {
+	display			: block;
+	float			: left;
+	border			: 1px solid #EFF6FF;
+	width			: 98px;
+	color			: #8F7D7D;
+	vertical-align	: middle;
+	text-decoration	: none;
+	padding			: 5px 0px;
+}
+#cpanel div.cqi a:hover {
+	border-left		: 1px solid #eee;
+	border-top		: 1px solid #eee;
+	border-right	: 1px solid #ccc;
+	border-bottom	: 1px solid #ccc;
+	background		: #EFEFEF;
+	color			: #0B62C4;
+}
+
+#cpanel div.separator {
+	clear			: both;
+	border-bottom	: 1px solid #CCCCCC;
+	color			: #444444;
+	font-weight		: bold;
+	margin			: 5px 7px 3px;
+	padding			: 10px 15px 2px;
+	text-align		: left;
+}
+#cpanel div.separator span {
+	text-align		: left;
+}
+/* can be redefined - now the main css is used */
+#cpanel img  { padding: 10px 0; margin: 0 auto; }
+#cpanel span { display: block; text-align: center; }
+
+.cpanelMessage {
+	margin			: 40px 0;
+	padding			: 15px;
+	border			: 1px solid #C87F01;
+	color			: #83693B;
+	background-color: #E6D5B7;
+}

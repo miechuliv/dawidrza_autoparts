@@ -1,0 +1,30 @@
+<modification>
+        <id>OpenCart profiler</id>
+        <version>1.0</version>
+        <vqmver>1</vqmver>
+        <author>Alexander Toporkov (toporchillo@gmail.com)</author>
+        <file name="system/engine/controller.php">
+			<operation>
+				<search position="replace"><![CDATA[$controller->$method($args);]]></search>
+				<add><![CDATA[
+				$profiler_start_time = microtime(true);
+				$controller->$method($args);
+				$time = round((microtime(true) - $profiler_start_time)*1000000);
+				if (!defined("HTTP_CATALOG")) {
+					$controller->db->query("REPLACE " . DB_PREFIX . "profile_log SET controller='".addslashes(get_class($controller).".".$method)."', time=time+$time");
+				}
+				]]></add>
+			</operation>
+			<operation>
+				<search position="replace"><![CDATA[$controller->{$action->getMethod()}($action->getArgs());]]></search>
+				<add><![CDATA[
+				$profiler_start_time = microtime(true);
+				$controller->{$action->getMethod()}($action->getArgs());
+				$time = round((microtime(true) - $profiler_start_time)*1000000);
+				if (!defined("HTTP_CATALOG")) {
+					$controller->db->query("REPLACE " . DB_PREFIX . "profile_log SET controller='".addslashes(get_class($controller).".".$action->getMethod())."', time=time+$time");
+				}
+				]]></add>
+			</operation>
+		</file>
+		</modification>

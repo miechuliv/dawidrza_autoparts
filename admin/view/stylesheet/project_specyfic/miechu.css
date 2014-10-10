@@ -1,0 +1,22 @@
+
+
+#ajax-wait {
+
+     position: fixed; left:50%; top:50%; width:1000px; margin-left: -500px; height: 200px; margin-top: -100px; display:none;
+	 text-align: center;
+	 z-index: 999;
+	 border-width: 1px;
+	 border-style: solid;
+	 border-color: black;
+     background-color: white;
+	 
+
+}
+
+#action-td {
+    width:11%;
+}
+
+.eba_error{
+    color: red;
+}

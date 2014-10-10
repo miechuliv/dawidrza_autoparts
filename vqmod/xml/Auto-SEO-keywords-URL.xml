@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Auto SEO Keywords</id>
+	  <version>1</version>
+	<author>Creative Ground</author>	
+
+	<file name="admin/view/template/common/header.tpl">
+		<operation error="abort">
+			<search position="before"><![CDATA[</head>]]></search>
+			<add><![CDATA[<script type="text/javascript" src="view/javascript/stringToSlug/jquery.stringToSlug.min.js"></script>
+	<script type="text/javascript">		
+	$(document).ready( function() {
+		$("#title-slug").stringToSlug({
+			setEvents: 'keyup keydown blur',
+			getPut: '#slug-result',
+		});
+	});
+	</script>]]></add>
+		</operation>
+	</file>	
+		<file name="admin/view/template/catalog/product_form.tpl">
+		<operation error="abort">
+			<search position="replace"><![CDATA[name="product_description[<?php echo $language['language_id']; ?>][name]"]]></search>
+			<add><![CDATA[id="title-slug" name="product_description[<?php echo $language['language_id']; ?>][name]"]]></add>
+		</operation>
+			<operation error="abort">
+			<search position="replace"><![CDATA[name="keyword"]]></search>
+			<add><![CDATA[id="slug-result" name="keyword"]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/catalog/category_form.tpl">
+		<operation error="abort">
+			<search position="replace"><![CDATA[name="category_description[<?php echo $language['language_id']; ?>][name]"]]></search>
+			<add><![CDATA[id="title-slug" name="category_description[<?php echo $language['language_id']; ?>][name]"]]></add>
+		</operation>
+			<operation error="abort">
+			<search position="replace"><![CDATA[name="keyword"]]></search>
+			<add><![CDATA[id="slug-result" name="keyword"]]></add>
+		</operation>
+	</file>	
+		<file name="admin/view/template/catalog/manufacturer_form.tpl">
+		<operation error="abort">
+			<search position="replace"><![CDATA[name="name"]]></search>
+			<add><![CDATA[id="title-slug" name="name"]]></add>
+		</operation>
+		<operation error="abort">
+			<search position="replace"><![CDATA[name="keyword"]]></search>
+			<add><![CDATA[id="slug-result" name="keyword"]]></add>
+		</operation>
+	</file>
+		<file name="admin/view/template/catalog/information_form.tpl">
+		<operation error="abort">
+			<search position="replace"><![CDATA[name="information_description[<?php echo $language['language_id']; ?>][title]"]]></search>
+			<add><![CDATA[id="title-slug" name="information_description[<?php echo $language['language_id']; ?>][title]"]]></add>
+		</operation>
+				<operation error="abort">
+			<search position="replace"><![CDATA[name="keyword"]]></search>
+			<add><![CDATA[id="slug-result" name="keyword"]]></add>
+		</operation>
+	</file>
+</modification>

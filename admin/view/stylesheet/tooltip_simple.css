@@ -1,0 +1,46 @@
+/**
+ * $Id: tooltip_simple.css 2507 2011-10-30 18:06:57Z mic $
+ * css for jquery tooltip simpletip
+ * @author		mic [http://osworx.net]
+ * @license		GNU/GPL
+ */
+/*
+.tooltip {
+	position			: absolute;
+	top					: 0;
+	left				: 0;
+	z-index				: 3;
+	display				: none;
+	background-color	: #FBFFD9;
+	border				: 1px solid #AAC20C;
+	margin				: 3px;
+	padding				: 7px;
+	width				: 300px;
+}
+*/
+.ttip {
+	cursor				: help;
+	border-bottom		: 1px dotted #6699CC;
+}
+
+#showtip {
+	z-index				: 1000;
+    display				: none;
+    background-color	: #FFFFAA;
+    border				: 1px solid #CCCC99;
+    padding				: 3px;
+    font-size			: 12px;
+    max-width			: 300px;
+    -moz-box-shadow		: 2px 2px 11px #666666;
+    -webkit-box-shadow	: 2px 2px 11px #666666;
+}
+
+#demotip {
+    display				: none;
+    background			: transparent url(../javascript/jquery/tooltip/images/black_arrow_big.png);
+    font-size			: 12px;
+    height				: 160px;
+    width				: 320px;
+    padding				: 25px;
+    color				: #fff;
+}

@@ -1,0 +1,301 @@
+/**
+ * $Id: osworx_system.css 2687 2012-04-25 15:40:16Z mic $
+ * css for several system tasks made by OSWorX
+ * @author		mic [http://osworx.net]
+ * @license		GNU/GPL
+ */
+img {
+	border			: none;
+}
+ .info {
+ 	float			: left;
+	width			: 99%;
+	margin			: 10px auto;
+	padding			: 5px;
+	border-top		: 1px solid #336699;
+	border-bottom	: 1px solid #336699;
+	background-color: #C0D2E8; /*#DFEEFF;*/
+ }
+.info_img {
+ 	float			: left;
+	background		: url( '../image/osworx/notice/notice-info.png' ) no-repeat left;
+	margin			: 5px;
+	height			: 29px;
+	width			: 29px;
+}
+.info_text {
+ 	float			: left;
+ 	width			: 95%;
+	vertical-align	: top;
+	color			: #1F4E7D;
+}
+
+/* must be named errror for no conflicts */
+.errror {
+	float			: left;
+	width			: 99%;
+	margin			: 10px auto;
+	padding			: 5px;
+	border-top		: 1px solid #FF0106;
+	border-bottom	: 1px solid #FF0106;
+	background-color: #FFECEE;
+}
+.errror_img {
+ 	float			: left;
+	background		: url( '../image/osworx/notice/notice-alert.png' ) no-repeat left;
+	margin			: 5px;
+	height			: 29px;
+	width			: 29px;
+}
+.errror_text {
+ 	float			: left;
+ 	width			: 95%;
+	vertical-align	: top;
+	color			: #8B1822;
+}
+
+.note {
+	float			: left;
+	width			: 99%;
+	margin			: 10px auto;
+	padding			: 5px;
+	border-top		: 1px solid #EEBB01;
+	border-bottom	: 1px solid #EEBB01;
+	background-color: #F0E6BE;
+}
+.note_img {
+ 	float			: left;
+	background		: url( '../image/osworx/notice/notice-note.png' ) no-repeat left;
+	margin			: 5px;
+	height			: 29px;
+	width			: 29px;
+}
+.note_text {
+ 	float			: left;
+ 	width			: 95%;
+	vertical-align	: top;
+	color			: #8A7011;
+}
+
+.log {
+	white-space		: nowrap;
+	width			: 99%;
+	height			: auto;
+	border			: 1px solid #999999;
+	padding			: 5px;
+	color			: #666666;
+}
+
+.vtop {
+	vertical-align	: top;
+}
+.readonly {
+	background-color: #EAEAEA;
+}
+.btn_right {
+	float			: right;
+	margin			: 5px;
+}
+.fieldset_grey {
+	border			: 1px solid #AEAEAE;
+	margin-top		: 5px;
+}
+.fieldset_green {
+	border			: 1px solid #76C766;
+	margin-top		: 5px;
+}
+.fieldset_red {
+	border			: 1px solid #C76767;
+	margin-top		: 5px;
+}
+/*
+.legend {
+	padding			: 0 10px 0 10px;
+}
+*/
+.legend {
+	margin			: 3px;
+	padding			: 5px;
+	border			: 1px solid #9A9A9A;
+	background-color: #F4F4F4;
+	/*color			: #2E2E2E; */
+}
+
+/* various */
+.grey {		color	: #666666; }
+.red {		color	: #FF0000; }
+.green {	color	: #01910D; }
+.orange {   color   : #FF9E00; font-weight: bold; }
+.nowrap { white-space: nowrap; }
+.center { text-align: center; }
+
+/* cpanel addition */
+.cpanel {
+	width		: 100%;
+	float		: left;
+	border		: 1px solid #DEDEDE;
+}
+
+.icons{
+	width		: 53%;
+	text-align	: left;
+	float		: left;
+	margin		: 5px;
+	padding		: 2px;
+	color		: green;
+}
+.summary{
+	width				: 42%;
+	text-align			: left;
+	float				: left;
+	margin				: 2px;
+	padding				: 2px;
+	color				: red;
+	border				: 1px solid #B5B5B5;
+}
+.clear{
+	clear				: both;
+}
+.header{
+	padding				: 3px;
+	color				: #797979;
+	font-size			: 13px;
+	font-weight			: bold;
+	background-color	: #F6F6F6;
+	border-bottom		: 1px solid #B5B5B5;
+}
+.summary_text {
+	width				: 100%;
+	float				: left;
+	padding				: 3px 0;
+	color				: #797979;
+	border-bottom		: 1px solid #D4D4D4;
+}
+.summary_section {
+	width				: 35%;
+	float				: left;
+	text-align			: left;
+	padding				: 2px 0;
+	font-size			: 12px;
+	font-weight			: bold;
+	border-right		: 1px solid #D4D4D4;
+}
+.summary_description {
+	/*width				: 47%;*/
+	float				: left;
+	text-align			: left;
+	padding				: 2px;
+	margin-left			: 5px;
+}
+
+/* modification */
+.modhr {
+	border				: none 0;
+	border-top			: 1px dotted #9C9C9C;
+	width				: 85%;
+	height				: 1px;
+}
+
+/* several */
+.spacer {
+	clear				: both;
+	border-bottom		: 1px dotted #CCCCCC;
+	padding-top			: 3px;
+}
+
+.col1 {
+	float				: left;
+	width				: 215px;
+	padding				: 5px 0;
+	margin				: 5px 0;
+}
+.col2 {
+	padding				: 5px 0;
+}
+
+.button_new {
+	padding-left	: 8px;
+	display			: inline-block;
+	margin-right	: 5px;
+	background		: url('../image/button_new_left.png') top left no-repeat;
+}
+.button_new span {
+	color			: #FFF;
+	display			: block;
+	padding			: 5px 10px 5px 2px;
+	background		: url('../image/button_new_right.png') top right no-repeat;
+}
+/* bigger scrollbox */
+.big {
+	width			: 450px;
+	height			: 250px;
+}
+/* editor */
+.button2-left,
+.button2-right,
+.button2-left div,
+.button2-right div {
+	float: left;
+}
+
+.button2-left a,
+.button2-right a,
+.button2-left span,
+.button2-right span {
+	display: block;
+	height: 22px;
+	float: left;
+	line-height: 22px;
+	font-size: 11px;
+	color: #666;
+	cursor: pointer;
+}
+
+.button2-left span,
+.button2-right span {
+	cursor: default;
+	color: #999;
+}
+
+.button2-left .page a,
+.button2-right .page a,
+.button2-left .page span,
+.button2-right .page span {
+	padding: 0 6px;
+}
+
+.page span {
+	color: #000;
+	font-weight: bold;
+}
+
+.button2-left a:hover,
+.button2-right a:hover {
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+.button2-left a,
+.button2-left span {
+	padding: 0 24px 0 6px;
+}
+
+.button2-right a,
+.button2-right span {
+	padding: 0 6px 0 24px;
+}
+.button2-left {
+	background: url(../image/osworx/editor/j_button2_left.png) no-repeat;
+	float: left;
+	margin-left: 5px;
+}
+.button2-left .readmore {
+	background: url(../image/osworx/editor/j_button2_readmore.png) 100% 0 no-repeat;
+}
+
+/* coloured rows */
+table.list tr.row0 { background-color: #F9F9F9; }
+table.list tr.row1 { background-color: #EEE; }
+table.list tr.row3 { background-color: #FFE2E2; }
+.list tr:hover td,
+.list tr:hover td  { background-color: #FFD; }

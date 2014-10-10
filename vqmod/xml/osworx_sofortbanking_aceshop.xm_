@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @version		$Id: osworx_sofortbanking_aceshop.xm_ 3002 2012-11-26 17:22:19Z mic $ -->
+<modification>
+	<id>sofort.com - changes for AceShop/MijoShop</id>
+	<version>1.2</version>
+	<vqmver>2.1.5</vqmver>
+    <sver>1.5</sver>
+	<author>OSWorX http://osworx.net</author>
+    <license>OSWorX Commercial License ( OCL ) - http://osworx.net</license>
+    <date>2012.11.25</date>
+    <type>plugin</type>
+    <description>Change code of payment module sofort.com for AceShop / MijoShop (Joomla)</description>
+
+	<file name="admin/view/template/payment/directebanking/directebanking_text.tpl">
+		<operation>
+			<search position="replace">
+                <![CDATA[
+                    <textarea class="mceEditor" name="<?php echo $_name . '_instruction_' . $lang['language_id']; ?>" id="<?php echo $_name . '_instruction_' . $lang['language_id']; ?>" style="width:400px; height:250px;"><?php echo ${$_name . '_instruction_' . $lang['language_id']}; ?></textarea>
+                ]]>
+            </search>
+			<add trim="true">
+                <![CDATA[
+                                <?php
+                                $desc =
+                                    isset( ${$_name . '_instruction_' . $lang['language_id']} )
+                                    ? ${$_name . '_instruction_' . $lang['language_id']}
+                                    : '';
+                                echo AceShop::getClass('base')->editor()->display(
+                                    $_name . '_instruction_' . $lang['language_id'],
+                                    $desc, '97%', '320', '50', '11'
+                                ); ?>
+                ]]>
+            </add>
+		</operation>
+	</file>
+
+    <file name="catalog/view/theme/*/template/payment/directebanking.tpl">
+		<operation>
+			<search position="replace">
+                <![CDATA[
+                    class="button"
+                ]]>
+            </search>
+			<add trim="true">
+                <![CDATA[
+                   class="button_oc"
+                ]]>
+            </add>
+		</operation>
+	</file>
+</modification>

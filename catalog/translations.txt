@@ -1,0 +1,18 @@
+
+ link: common/translate/save stara_fraza: Kontakt nowa_fraza: Kontakt
+ link:   stara_fraza: Kontakt nowa_fraza: Kontakt
+ link:   stara_fraza: Kontakt nowa_fraza: Kontakt
+ link:   stara_fraza: Kontakt nowa_fraza: Kontakt
+ link:   stara_fraza: Kontakt nowa_fraza: Kontatk23
+ link:   stara_fraza: Kontakt nowa_fraza: Kontatk23
+ link:   stara_fraza: Informationen nowa_fraza: Informationen2
+ link:   stara_fraza: Informationen nowa_fraza: Informationen2
+ link: product/product stara_fraza: Preis nowa_fraza: Preis2
+ link: product/product stara_fraza: Preis2 nowa_fraza: Preis
+ link: product/product stara_fraza: Preis nowa_fraza: Cena
+ link: product/product stara_fraza: Cena nowa_fraza: Preis
+ link: undefined stara_fraza: Preis nowa_fraza: Cena
+ link: undefined stara_fraza: Cena nowa_fraza: Preis
+ link: undefined stara_fraza: Preis nowa_fraza: Cena
+ link: undefined stara_fraza: Cena nowa_fraza: Preis
+ link: undefined stara_fraza: Cena nowa_fraza: Preis
