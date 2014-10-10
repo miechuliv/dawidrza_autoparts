@@ -57,6 +57,7 @@
 			<div class="right">
 				<?php echo $cart; ?>   
 			  <div class="mobilehide">
+				<div style="float:left; line-height:110%; font-size:13px; padding:0 10px 0 0;"><strong>Audi A8</strong><br/><a href="#">change car</a></div>
 				<div id="account">
 				<div>
 					<i class="fa fa-user headeri"></i><?/*<h4><?php echo $this->language->get('text_witaj'); ?> <span><?php if ($logged) { ?> <?php echo $text_logged; ?> <?php } else { echo $text_welcome; } ?></span></h4>*/?>

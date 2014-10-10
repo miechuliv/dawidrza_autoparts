@@ -5,6 +5,7 @@
 		<div class="leftmenu">
 			<div>
 				<?php echo $column_left; ?>
+				<?php echo $column_left; ?>
 			</div>
 		</div>
 	</div>
@@ -48,7 +49,17 @@
 		</div>
 	</div>
 	<div class="small banerki">
-		
+		<div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nesciunt possimus voluptates voluptas nulla reiciendis quis facere aut vel?
+			</p>
+			<ul class="zalety">	
+				<li>Lorem ipsum lor</li>
+				<li>Lorem ipsum ipsum lor</li>
+				<li>Lorem lor</li>
+				<li>Lorem ipsum ipu lor</li>
+			</ul>
+		</div>
 	</div>
 </div>
 
@@ -81,13 +92,12 @@
 	</div>
 	<div class="small">	
 		<div>
-			<h2>Käuferschutz</h2>
-			<img src="./image/trusted.jpg" alt="trusted shop" style="margin:15px 0 0"/>
+			<img src="./image/trusted.jpg" alt="trusted shop" />
 			<div id="ikonki">
 				<img src="./image/paym-brw/dhl.png" alt="">
-				<img src="./image/paym-brw/last.png" alt="">
+				<img src="./image/paym-brw/visa.png" alt="">				
 				<img src="./image/paym-brw/master.png" alt="">
-				<img src="./image/paym-brw/visa.png" alt="">
+				<img src="./image/paym-brw/klarna1.png" alt="">
 				<img src="./image/paym-brw/paypal.png" alt="">
 				<img src="./image/paym-brw/sofort.png" alt="">
 			</div>

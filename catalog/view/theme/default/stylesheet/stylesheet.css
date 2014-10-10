@@ -210,7 +210,8 @@ textarea {border:1px solid #ddd; resize:none; background:#fafafa; width:95%; pad
 .home-con {display:table; width:100%; margin:0 0 10px;}
 .home-con > div {display:table-cell; vertical-align:top; padding:0 10px}
 .home-con > div > div { border:1px solid #e5e5e5; padding:10px; background:#fff;}
-.home-con.top .center > div {height:290px; position:relative}
+.home-con.top .center > div,
+.home-con.top .banerki > div {height:290px; position:relative}
 .home-con .small {width:20%; padding:0;}
 .home-con .center {width:60%;}
 .home-con h2 {font-size:16px; margin:0}
@@ -219,8 +220,10 @@ textarea {border:1px solid #ddd; resize:none; background:#fafafa; width:95%; pad
 .home-con .leftmenu ul {margin:0 0 20px}
 .home-con .leftmenu > div:last-child ul {margin:0}
 .home-con h3 {width:100%; text-align:center; margin:10px 0;}
-.home-con.bot > div > div {min-height:90px}
+.home-con.bot > div > div {min-height:130px}
 .home-con.bot .center h3 {font-size:16px;}
+
+.banerki p {margin:0 0 10px;}
 
 .paym > div {width:20%; text-align:center; opacity:0.7}
 .paym > div:hover {opacity:1}
@@ -249,12 +252,6 @@ textarea {border:1px solid #ddd; resize:none; background:#fafafa; width:95%; pad
 .controll #next {float:right;}
 .controll span {font-size:35px; color:#aaa}
 .controll span:hover {color:#000}
-
-.banerki > div {margin:0 0 5px; padding:0 !important;} 
-.banerki > div img {display:block; max-height:132px; width:100%;}
-.banerki > div h3 {margin:10px; text-align:left; font-size:16px;}
-.banerki > div:hover img {opacity:0.1}
-.banerki > div:last-child {margin:0;}
 
 #home-middle {margin:40px 0 0;}
 #livesell > div {text-align:center}
@@ -287,6 +284,7 @@ textarea {border:1px solid #ddd; resize:none; background:#fafafa; width:95%; pad
 #popular > li a {border-radius:3px; display:block; margin:0 0 5px; padding:5px 10px; border:1px solid #ddd; background:#FAFAFA;}
 #popular > li:hover a {text-decoration:none !important; background:#fff !important}
 
+#ikonki {border-top:1px solid #ddd; padding:5px 0 0; margin:5px 0 0}
 #ikonki img {width:31%; display:inline-block;}
 
 /* PAGE */
